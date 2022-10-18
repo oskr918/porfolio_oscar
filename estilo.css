@@ -10,16 +10,20 @@ html{
     scroll-behavior: smooth;
 }
 /* MENU */
+
+.imagen-logo{
+    width: 300px;
+}
 .contenedor-header{
     background: #1e2326;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 99;
+    z-index: 2;
 }
 .contenedor-header header{
-    max-width: 1100px;
+    max-width: 1300px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -35,6 +39,10 @@ html{
 .contenedor-header header ul{
     display: flex;
     list-style: none;
+    background: #181818;
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
 }
 .contenedor-header header nav ul li a{
     text-align: none;
@@ -58,7 +66,7 @@ html{
 /* SECCION I N I C I O */
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(img/fondo.jpg);
+    url(img/fondo3.jpg);
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -72,6 +80,8 @@ html{
     margin: auto;
     text-align: center;
     border-radius: 40px;
+    margin-top: 180px;
+    border: 1px solid;
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
@@ -183,6 +193,7 @@ html{
     margin-bottom: 10px;
 }
 .sobremi button{
+    text-decoration: none;
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -194,6 +205,9 @@ html{
     color: #fff;
     position: relative;
     z-index: 10;
+}
+.sobremi a{
+    text-decoration: none;
 }
 .sobremi button .overlay{
     position: absolute;
@@ -358,7 +372,7 @@ html{
     0%{width: 0%;}
     100%{width: 94%;}
 }
-/* SECCION CURRICULUM */
+/* SECCION CURRICULUM 
 .curriculum{
     background-color: #1e2326;
     color: #fff;
@@ -464,6 +478,7 @@ html{
     position: relative;
     bottom: 4px;
 }
+*/
 /* SECCION PORTFOLIO */
 .portfolio{
     background-color: #252A2E;
@@ -487,7 +502,7 @@ html{
 }
 .portfolio .galeria .proyecto{
     position: relative;
-    max-width: 340px;
+    max-width: 500px;
     height: fit-content;
     margin: 10px;
     cursor: pointer;
